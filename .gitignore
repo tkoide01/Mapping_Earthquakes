@@ -1,7 +1,10 @@
 # Byte-compiled / optimized / DLL files
+
 config.js
 gitignore.py
 
+logic.js
+major_eq_starter_logic.js
 __pycache__/
 *.py[cod]
 *$py.class
