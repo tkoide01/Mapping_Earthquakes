@@ -19,17 +19,17 @@ In order to visually present the differences between the magnitude of earthquake
 
 
 ## Results
-+ The eathquakes from the past 7 days are visualized differently in size and color based on their magnitude to easily understand the their differences in a glance. In addition, we added additional features to further analyze about the earthquakes as below three maps:
+  The eathquakes from the past 7 days are visualized differently in size and color based on their magnitude to easily understand the their differences in a glance. In addition, we added additional features to further analyze about the earthquakes as below three maps:
   
-  **Deliverable 1: Add Tectonic Plate Data**
+   **Deliverable 1: Add Tectonic Plate Data**
   - The first map have an additional layer displaying the tectonic plates around the world. The tectonic plates are displayed as orange in the map, and we can see that majority of earthquakes are occuring by the tectonic plates. But it is worth noteing that there are several earthquakes occuring a far from tectonic plates.
   ![](Earthquake_Challenge/images/deliverable1_output.png)
   
-  **Deliverable 2: Add Major Earthquake Data**
+   **Deliverable 2: Add Major Earthquake Data**
   - On this map, we added a layer that displays only major earthquakes from the past 7days. This layer filters out any earthquakes below its magnitude 4.5. As a result, we can confirm that almost all major earthquakes occur by tectonic plates while some weaker earthquakes are not as shown in the previous map image. We can see that there is a strong correlation between earthquake's magnitude level with its location from tectonic plates.
   ![](Earthquake_Challenge/images/deliverable2_output.png)
 
-  **Deliverable 3: Add an Additional Map**
+   **Deliverable 3: Add an Additional Map**
   - Lastly, we added an additional base map layer to change the look of the map in dark background. This base map layer displays each earthquake better by setting the background as dark color.
   ![](Earthquake_Challenge/images/deliverable3_output.png)
 
