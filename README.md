@@ -4,96 +4,32 @@ Visually show the differences between the magnitudes of earthquakes all over the
 ## Overview of the Project
 In order to visually present the differences between the magnitude of earthquakes in the world, we use the JavaScript and the D3.js library to retrieve the coordinates and magnitudes of the earthquakes from the GeoJSON data. Then, also utilize the Leaflet library to plot the data on a Mapbox map through an API request and create interactivity for the earthquake data.
 
-
-
 ## Resources
-- Data Source: schools_complete.csv, students_complete.csv
-- Software: Python 3.6.1, Jupytor Note Book
+- Data Source: 
+
+  "*USGS Earthquake Hazards Program*" URL:<https://earthquake.usgs.gov/>
+  - <https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson>
+  - <https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson>
+  
+  "*GitHub: fraxen/tectonicplates*" URL:<https://github.com/fraxen/tectonicplates>
+  - <https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json>
+
+- API Call: mapbox
+- Software: Visual Code Studio, GitBash, anaconda Prompt
+
 
 ## Results
-+ How is the district summary affected?
++ The eathquakes from the past 7 days are visualized differently in size and color based on their magnitude to easily understand the their differences in a glance. In addition, we added additional features to further analyze about the earthquakes as below three maps:
   
-  Comparing the two screen shots from district summary before and after replacing the Thomas High School 9th grade students' scorres with NaN, we can observe about 0.1%-0.3% drop in "% Passing Math," "% Passing Reading," and "% Overall Passing" after the event. 
- 
-  **Before the replacement**
-  ![](Resources/Overall_District_Summary.png)
+  **Deliverable 1: Add Tectonic Plate Data**
+  - The first map have an additional layer displaying the tectonic plates around the world. The tectonic plates are displayed as orange in the map, and we can see that majority of earthquakes are occuring by the tectonic plates. But it is worth noteing that there are several earthquakes occuring a far from tectonic plates.
+  ![](Earthquake_Challenge/images/deliverable1_output.png)
   
-  **After the replacement**
-  ![](Resources/Overall_District_Summary_NaNremoved.png)
-  
-  Therefore, the replacement of scores to NaN did slightly negatively impact on the District Summary overall Passing percentage.
-  
-+ How is the school summary affected?
-  
-  Reviewing the below tables, we can find that "% Passing Math," "% Passing Reading," and "% Overall Passing" for Thomas High School are declined by approximately 0.3% after replacing the 9th Grade students' scores by NaN.
-  
-  **Before the replacement**
-  ![](Resources/Top_5_Performing_Schools.png)
-  
-  **After the replacement**
-  ![](Resources/Top_5_Performing_Schools_NaNremoved.png)
+  **Deliverable 2: Add Major Earthquake Data**
+  - On this map, we added a layer that displays only major earthquakes from the past 7days. This layer filters out any earthquakes below its magnitude 4.5. As a result, we can confirm that almost all major earthquakes occur by tectonic plates while some weaker earthquakes are not as shown in the previous map image. We can see that there is a strong correlation between earthquake's magnitude level with its location from tectonic plates.
+  ![](Earthquake_Challenge/images/deliverable2_output.png)
 
-+ How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
-  
+  **Deliverable 3: Add an Additional Map**
+  - Lastly, we added an additional base map layer to change the look of the map in dark background. This base map layer displays each earthquake better by setting the background as dark color.
+  ![](Earthquake_Challenge/images/deliverable3_output.png)
 
-  
-  Althouth the event affected the metrics in the previous two cases, the impact was not large enough to affect the ranking of Thomas High School relative to other schools as shown in the below two rankings.
-  
-  **Before the replacement**
-  ![](Resources/Top_5_Performing_Schools.png)
-  
-  **After the replacement**
-  ![](Resources/Top_5_Performing_Schools_NaNremoved.png)
-  
-+ How does replacing the ninth-grade scores affect the following:
-  Note that I did not observe any affect from the replacement comparing the before and the after as below images for all four categories of analysis.
-  
-   + Math and reading scores by grade
-
-   **Before the replacement**
-   
-   ![](Resources/Scores_by_grade_before.png)
-  
-   **After the replacement**
-   
-   ![](Resources/Scores_by_grade_after.png)
-   
-   + Scores by school spending
-
-   **Before the replacement**
-   
-   ![](Resources/Scores_by_spending_before.png)
-  
-   **After the replacement**
-   
-   ![](Resources/Scores_by_spending_after.png)
-   
-   + Scores by school size
-   
-   **Before the replacement**
-   
-   ![](Resources/Scores_by_size_before.png)
-  
-   **After the replacement**
-   
-   ![](Resources/Scores_by_size_after.png)
-   
-   + Scores by school type
-
-   **Before the replacement**
-   
-   ![](Resources/Scores_by_type_before.png)
-  
-   **After the replacement**
-   
-   ![](Resources/Scores_by_type_after.png)
-
-
-
-## Summary
-   Summarize four major changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
-
-   In conclusion, the impact of replacing the reading and math scores with NaNs for the ninth grade at Thomas High School on the  school district analysis was minimul. Comparing each analysis result from before and the after change, we could find **0.1-0.3% decline** on "% Passing Math," "% Passing Reading," and "% Overall Passing" from the District Summary. Also, the "% Passing Math," "% Passing Reading," and "% Overall Passing" for Thomas High School are declined by approximately 0.3% after replacing the 9th Grade students' scores by NaN.
-   
-   However, all other measurements such as the ranking of Top and Bottom performing schools, Math and reading scores by grade, Scores by school spending, Scores by school size, and Scores by school type all did not show big differences. Therefore, the school board can make decesion on school budget without considering the impact from this event.
-   
